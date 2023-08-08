@@ -3,7 +3,7 @@ const express = require("express");
 const router = require("./router/router");
 const app = express();
 const cookieParser = require("cookie-parser")
-const PORT = 8001;
+const PORT = process.env.PORT || 8001;
 require('../server/db/connect')
 const cors = require("cors")
 
